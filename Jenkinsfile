@@ -4,7 +4,7 @@ pipeline {
 
        stage('cloning from git') {
             steps {
-            git branch: 'main', url: 'https://github.com/rishguptaims/playwright_basics.git'
+            git clone 'https://github.com/rishguptaims/playwright_basics.git'
             }
     }
     stage('Run Node Modules') {
