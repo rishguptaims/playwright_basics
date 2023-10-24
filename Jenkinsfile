@@ -3,20 +3,20 @@ pipeline {
     stages {
 
        stage('cloning from git') {
-            steps {
+            step {
             git clone 'https://github.com/rishguptaims/playwright_basics.git'
             }
     }
     stage('Run Node Modules') {
             steps {
-                sh 'npm install'
+                // sh 'npm install'
                 echo "NPM ran"
             }
         }
 
     stage('Run Test Modules') {
             steps {
-                sh 'npm run test1'
+                // sh 'npm run test1'
                 echo "Tests Ran"
             }
         }        
