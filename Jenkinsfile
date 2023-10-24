@@ -4,6 +4,7 @@ pipeline {
 
        stage('cloning from git') {
             step {
+            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true  
             git clone 'https://github.com/rishguptaims/playwright_basics.git'
             }
     }
